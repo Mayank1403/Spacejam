@@ -2,6 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
 
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 :root {
   --gutter: 0 5vw;
   overflow-x: hidden;
@@ -28,16 +31,20 @@ ul {
 .logo {
   flex: 2;
   font-family: "JetBrains Mono", monospace;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
 }
 
 .links {
-  flex: 1;
+  flex: 0.5;
+  margin-top: 10px;
   list-style: none;
   display: flex;
   justify-content: space-around;
-  font-family: "Major Mono Display", monospace;
-  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: "Major Mono Display", monospace; */
+  text-transform: uppercase;
+  font-size: 17px;
 }
 
 .links li:hover {
@@ -46,13 +53,39 @@ ul {
 }
 
 .main-container {
+
 }
 .section1 {
   min-height: 100vh;
-  background: #10489b;
+  
+
+  background: -webkit-linear-gradient(top right,  #0d0d0d, #028597);
+  background: -moz-linear-gradient(top right,  #0d0d0d, #028597);
+  background: linear-gradient(to bottom left, #0d0d0d, #028597);
+
+  /* background: -webkit-linear-gradient(top right,  #262626, #028597);
+  background: -moz-linear-gradient(top right,  #262626, #028597);
+  background: linear-gradient(to bottom left, #262626, #028597); */
+  
+
+
+  /* background: -webkit-linear-gradient(top right,  #46e8fc, #262626);
+  background: -moz-linear-gradient(top right,  #46e8fc,#262626);
+  background: linear-gradient(to bottom left, #46e8fc,#262626 );
+   */
+
+  /* background: -webkit-linear-gradient(top right,  #262626, #46e8fc);
+  background: -moz-linear-gradient(top right,  #262626, #46e8fc);
+  background: linear-gradient(to bottom left, #262626, #46e8fc);
+   */
+  /* background: -webkit-linear-gradient(top right,  #004aad, #46e8fc);
+  background: -moz-linear-gradient(top right,  #004aad, #46e8fc);
+  background: linear-gradient(to bottom left, #004aad, #46e8fc);
+   */
+/*   
   background: -webkit-linear-gradient(top right, #10489b, #4b166c);
   background: -moz-linear-gradient(top right, #10489b, #4b166c);
-  background: linear-gradient(to bottom left, #10489b, #4b166c);
+  background: linear-gradient(to bottom left, #10489b, #4b166c); */
 }
 
 .spaceJam{
