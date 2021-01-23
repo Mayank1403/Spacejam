@@ -179,3 +179,81 @@ ul {
 .accent{
   color: #4bcccc;
 }
+
+/* Footer */
+
+.footer{
+  background-color: #0d0d0d;
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 100%;
+}
+.footerIcon {
+  font-size: 25px;
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-top: 10px;
+  float: right;
+  justify-content: right;
+}
+a.footerIcon:hover{
+  color: white;
+}
+ #discord:hover{
+  color :#4bcccc;
+ }
+ #github:hover{
+  color :#4bcccc; 
+}
+ #instagram:hover{
+  color :#4bcccc;
+ }
+#mail:hover{
+  color :#4bcccc;
+ }
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "JetBrains Mono", monospace;
+  padding: 10px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+.copyright{
+  margin-top: 12px;
+  font-size: 13px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .footer{
+      flex-direction: column;
+      align-items: center;
+      padding: 2.5px;
+      padding-left:15px ;
+      padding-right:15px ;
+  }
+  .footerIcon {
+    font-size:20px ;
+    margin-bottom: 30px;
+  }
+
+}
+
