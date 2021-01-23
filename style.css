@@ -242,6 +242,22 @@ a.footerIcon:hover{
   font-size: 13px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 37,0.8); /* color of the scroll thumb */
+  border-radius: 5px; /* roundness of the scroll thumb */
+}
+
+
 @media only screen and (max-width: 1100px) {
   .footer{
       flex-direction: column;
