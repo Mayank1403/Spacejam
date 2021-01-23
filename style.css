@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
+
+:root {
+  --gutter: 0 5vw;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+ul {
+  margin: var(--gutter);
+  list-style: none;
+  display: flex;
+  padding: 3vh 0;
+  color: whitesmoke;
+}
+
+.logo {
+  flex: 2;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.5rem;
+}
+
+.links {
+  flex: 1;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  font-family: "Major Mono Display", monospace;
+  font-size: 1.5rem;
+}
+
+.links li:hover {
+  animation: 200ms onhover ease-in-out forwards;
+  cursor: pointer;
+}
+
+.main-container {
+}
+.section1 {
+  min-height: 100vh;
+  background: #10489b;
+  background: -webkit-linear-gradient(top right, #10489b, #4b166c);
+  background: -moz-linear-gradient(top right, #10489b, #4b166c);
+  background: linear-gradient(to bottom left, #10489b, #4b166c);
+}
+
+.spaceJam{
+    margin: 10vh auto;
+    width: 60vw;
+    min-height: 40vh;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: 750ms onload ease-in-out forwards;
+    line-height: 50px;
+}
+
+.spaceJam img{
+    max-height: 50vh;
+}
+
+.spaceJam p{
+    color: white;
+    font-family: 'Sigmar One', cursive;
+}
+
+.spaceJam p:first-child{
+    font-size: 5rem;
+    letter-spacing: 2px;
+}
+
+.spaceJam p:nth-child(2){
+    font-size: 2rem;
+}
+
+@keyframes onhover {
+  to {
+    transform: scale(1.040);
+  }
+}
+
+@keyframes onload {
+    to {
+      opacity: 1;
+    }
+  }
+  
