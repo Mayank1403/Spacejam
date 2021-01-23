@@ -33,6 +33,7 @@ ul {
   display: flex;
   padding: 3vh 0;
   color: whitesmoke;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -49,7 +50,6 @@ ul {
   display: flex;
   justify-content: space-around;
   font-family: "Roboto", sans-serif;
-  /* font-family: "Major Mono Display", monospace; */
   text-transform: uppercase;
   font-size: 17px;
 }
@@ -58,11 +58,6 @@ ul {
   animation: 200ms onhover ease-in-out forwards;
   cursor: pointer;
 }
-
-/* .main-container {
-
-} */
-
 #demo {
   color: whitesmoke;
   font-family: "Major Mono Display", monospace;
@@ -74,42 +69,11 @@ ul {
 
 .section1 {
   min-height: 100vh;
-  /* background-color: black; */
 
   background: -webkit-linear-gradient(top right, #000000, rgb(0, 74, 173));
   background: -moz-linear-gradient(top right, #000000, rgb(0, 74, 173));
   background: linear-gradient(to bottom left, #000000, rgb(0, 74, 173));
 
-/*   
-  background: -webkit-linear-gradient(top right, #000000, #404040);
-  background: -moz-linear-gradient(top right, #000000, #404040);
-  background: linear-gradient(to bottom left, #000000, #404040); */
-
-  /* background: -webkit-linear-gradient(top right, #0d0d0d, #028597);
-  background: -moz-linear-gradient(top right, #0d0d0d, #028597);
-  background: linear-gradient(to bottom left, #0d0d0d, #028597); */
-
-  /* background: -webkit-linear-gradient(top right,  #262626, #028597);
-  background: -moz-linear-gradient(top right,  #262626, #028597);
-  background: linear-gradient(to bottom left, #262626, #028597); */
-
-  /* background: -webkit-linear-gradient(top right,  #46e8fc, #262626);
-  background: -moz-linear-gradient(top right,  #46e8fc,#262626);
-  background: linear-gradient(to bottom left, #46e8fc,#262626 );
-   */
-
-  /* background: -webkit-linear-gradient(top right,  #262626, #46e8fc);
-  background: -moz-linear-gradient(top right,  #262626, #46e8fc);
-  background: linear-gradient(to bottom left, #262626, #46e8fc);
-   */
-  /* background: -webkit-linear-gradient(top right,  #004aad, #46e8fc);
-  background: -moz-linear-gradient(top right,  #004aad, #46e8fc);
-  background: linear-gradient(to bottom left, #004aad, #46e8fc);
-   */
-  /*   
-  background: -webkit-linear-gradient(top right, #10489b, #4b166c);
-  background: -moz-linear-gradient(top right, #10489b, #4b166c);
-  background: linear-gradient(to bottom left, #10489b, #4b166c); */
 }
 
 .spaceJam {
@@ -257,8 +221,36 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px; /* roundness of the scroll thumb */
 }
 
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display:none;
+}
+
+.checkbtn {
+  display: block;
+  margin-right: 10px;
+}
 
 @media only screen and (max-width: 1100px) {
+
+  .links{
+    font-size: 15px;
+    padding-left: 0px ;
+  }
+
+  .logo {
+    font-size: 30px;
+  }
+
   .footer{
       flex-direction: column;
       align-items: center;
@@ -266,10 +258,36 @@ body::-webkit-scrollbar-thumb {
       padding-left:15px ;
       padding-right:15px ;
   }
+
+
   .footerIcon {
     font-size:20px ;
     margin-bottom: 30px;
   }
+  
+  .wcard{
+    padding: 15px;
+    margin-left:5%;
+    margin-right: 5%;
+  }
+  
+  .cardContent{
+    font-size: 15px;
+    padding: 5px;
+  }
+  
+  .cardHeader{
+    font-size: 25px;
+  }
 
+  .spaceJam img {
+    max-height: 20vh;
+  }
+  
+  #demo{
+    font-size: 20px;
+  }
+
+  
 }
 

@@ -16,22 +16,59 @@
             <div class="links">
               <a href="#Home" class="navLink"><li class="about">Home</li></a>
               <a href="#AboutUs" class="navLink"><li class="about">About Us</li></a>
-              <a><li class="contact">Contacts</li></a>
+              <a href="#Contacts" class="navLink"><li class="contact">Contacts</li></a>
             </div>
           </ul>
         </nav>
+        <!-- <nav>
+          <ul>
+            <li class="logo">&lt;/HackerSpace&gt;</li>
+            
+
+            <div class="links">
+              <input type="checkbox" id="check" />
+              <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
+              <a href="#Home" class="navLink"><li class="about">Home</li></a>
+              <a href="#AboutUs" class="navLink"><li class="about">About Us</li></a>
+              <a href="#Contacts" class="navLink"><li class="contact">Contacts</li></a>
+            </div>
+          </ul>
+        </nav> -->
+
+ <!-- <ul class="navList">
+      <li class="navItem">
+        <a href="{% url 'home' %}" class="navLink">Home</a>
+      </li>
+      <li class="navItem">
+        <a href="{% url 'blog-list' %}" class="navLink">Blog</a>
+      </li> -->
+      <!-- <li class="navItem">
+        <a href="/" class="navLink">Mentors</a>
+      </li>
+      <li class="navItem">
+        <a href="/" class="navLink">Domains</a>
+      </li>
+      <li class="navItem">
+        <a href="/" class="navLink">Projects</a>
+      </li> -->
+      <!-- <li class="navItem">
+        <a href="{% url 'aboutus' %}" class="navLink">About Us</a>
+      </li>
+    </ul> -->
+
 
         <!-- SpaceJam logo -->
         <div class="spaceJam">
           <img src="final_crop.png" alt="logo" />
-          <!-- <p>Space Jam</p>
-          <p>2021</p> -->
         </div>
+
+        <!-- Timer -->
         <p id="demo"></p>
-        <!-- Main Body -->
+
         <br>
         <br>
         <br>
+
         <!-- About Us -->
         <div class="wcard" id="AboutUs">
           <center><p class="cardHeader">About Us</p></center>
@@ -40,12 +77,10 @@
           <p class="cardContent">
             HackerSpace presents its first-ever hackathon - <b class="accent">SpaceJam 2021</b>
           </p>
-
           <p class="cardContent">
             The hackathon is open to all students of PES University. The theme is <b class="accent">Open Innovation</b>, so build out on the great ideas that you have to 
             solve problems that you face every day! 
           </p>
-      
           <p class="cardContent">
             This Hackathon will be aimed at being <b class="accent">beginner-friendly</b> that aims provide the new batch of students with their first experience in 
             ideating and developing and to explore the world of hackathon. 
@@ -59,52 +94,53 @@
           </p>
           </center>  
         </div>
+
         <br>
         <br>
         <br>
       
-    <!-- footer -->
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <div class="footer">
-        <p class="content">&#60;/HackerSpace&#62;</p>
-        <p class="copyright">© SpaceJam 2021</p>
-        <div class="row">
-          <div id="github">
-              <a
-                class="footerIcon"
-                href="https://github.com/HackerSpace-PESU"
-                target="_blank"
-                ><i id="github" class="fab fa-github"></i
-              ></a>
-            </div>
-            <div id="instagram">
-              <a
-                class="footerIcon"
-                href="https://www.instagram.com/peshackerspace/"
-                target="_blank"
-                ><i id="instagram" class="fab fa-instagram"></i
-              ></a>
-            </div>
-            <div id="mail">
-              <a
-                class="footerIcon"
-                href="mailto:hackerspace@pes.edu"
-                target="_blank"
-                ><i id="mail" class="fas fa-at"></i
-              ></a>
-            </div>
-            <div id="discord">
-              <a
-                class="footerIcon"
-                href="https://discord.com/invite/zEpxPnP"
-                target="_blank"
-                ><i id="discord" class="fab fa-discord"></i
-              ></a>
-            </div>
-      </div>
+        <!-- footer -->
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <div class="footer" id="Contacts">
+            <p class="content">&#60;/HackerSpace&#62;</p>
+            <p class="copyright">© SpaceJam 2021</p>
+            <div class="row">
+              <div id="github">
+                  <a
+                    class="footerIcon"
+                    href="https://github.com/HackerSpace-PESU"
+                    target="_blank"
+                    ><i id="github" class="fab fa-github"></i
+                  ></a>
+                </div>
+                <div id="instagram">
+                  <a
+                    class="footerIcon"
+                    href="https://www.instagram.com/peshackerspace/"
+                    target="_blank"
+                    ><i id="instagram" class="fab fa-instagram"></i
+                  ></a>
+                </div>
+                <div id="mail">
+                  <a
+                    class="footerIcon"
+                    href="mailto:hackerspace@pes.edu"
+                    target="_blank"
+                    ><i id="mail" class="fas fa-at"></i
+                  ></a>
+                </div>
+                <div id="discord">
+                  <a
+                    class="footerIcon"
+                    href="https://discord.com/invite/zEpxPnP"
+                    target="_blank"
+                    ><i id="discord" class="fab fa-discord"></i
+                  ></a>
+                </div>
+          </div>
+        </div>
+      </section>
     </div>
-  </section>
-</div>
   </body>
 
   <script>
@@ -137,5 +173,10 @@
         document.getElementById("demo").innerHTML = "EXPIRED";
       }
     }, 1000);
+
+    // Mobile View for Navbar
+    function closeDsc(){
+        document.getElementsByClassName("dscCard")[0].classList.toggle('active');
+    }
   </script>
 </html>
