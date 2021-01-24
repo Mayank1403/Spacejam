@@ -76,7 +76,7 @@ ul {
 
 .spaceJam {
   margin: 10vh auto;
-  width: 60vw;
+  width: 50vw;
   min-height: 44vh;
   opacity: 0;
   display: flex;
@@ -88,7 +88,7 @@ ul {
 }
 
 .spaceJam img {
-  max-height: 52vh;
+  max-height: 45vh;
 }
 
 .spaceJam p {
@@ -120,7 +120,7 @@ ul {
 .container {
   display: flex;
   justify-content: center;
-  min-height: 90vh;
+  /* min-height: 90vh; */
   align-items: center;
 }
 
@@ -237,23 +237,10 @@ body::-webkit-scrollbar-thumb {
   border-radius: 5px; /* roundness of the scroll thumb */
 }
 
-.checkbtn {
-  font-size: 30px;
+.date{
   color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-
-#check {
-  display: none;
-}
-
-.checkbtn {
-  display: block;
-  margin-right: 10px;
+  font-size: 25px;
+  font-family: "JetBrains Mono", monospace;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -267,7 +254,12 @@ body::-webkit-scrollbar-thumb {
   }
 
   .logo {
+    margin-top: 25px;
     font-size: 30px;
+    position: relative; 
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .footer {
@@ -303,10 +295,18 @@ body::-webkit-scrollbar-thumb {
   }
 
   .spaceJam img {
-    max-height: 20vh;
+    max-height: 16vh;
   }
 
   #demo {
     font-size: 20px;
+  }
+
+  .date{
+    font-size: 20px;
+  }
+
+  .sponsorsImages{
+    height: 70px;
   }
 }

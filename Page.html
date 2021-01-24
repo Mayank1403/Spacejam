@@ -24,47 +24,13 @@
             </div>
           </ul>
         </nav>
-        <!-- <nav>
-          <ul>
-            <li class="logo">&lt;/HackerSpace&gt;</li>
-            
-
-            <div class="links">
-              <input type="checkbox" id="check" />
-              <label for="check" class="checkbtn"><i class="fas fa-bars"></i></label>
-              <a href="#Home" class="navLink"><li class="about">Home</li></a>
-              <a href="#AboutUs" class="navLink"><li class="about">About Us</li></a>
-              <a href="#Contacts" class="navLink"><li class="contact">Contacts</li></a>
-            </div>
-          </ul>
-        </nav> -->
-
-        <!-- <ul class="navList">
-      <li class="navItem">
-        <a href="{% url 'home' %}" class="navLink">Home</a>
-      </li>
-      <li class="navItem">
-        <a href="{% url 'blog-list' %}" class="navLink">Blog</a>
-      </li> -->
-        <!-- <li class="navItem">
-        <a href="/" class="navLink">Mentors</a>
-      </li>
-      <li class="navItem">
-        <a href="/" class="navLink">Domains</a>
-      </li>
-      <li class="navItem">
-        <a href="/" class="navLink">Projects</a>
-      </li> -->
-        <!-- <li class="navItem">
-        <a href="{% url 'aboutus' %}" class="navLink">About Us</a>
-      </li>
-    </ul> -->
-
         <!-- SpaceJam logo -->
         <div class="spaceJam">
           <img src="final_crop.png" alt="logo" />
         </div>
-
+        <!-- Event Date -->
+        <center><p class="date">February 27-28,2021</p></center>
+        <br>
         <!-- Timer -->
         <p id="demo"></p>
 
@@ -75,6 +41,8 @@
           data-button-theme="dark-inverted"
           style="height: 44px; width: 312px"
         ></div>
+        <br>
+        <br>
         <!-- About Us -->
         <div class="container">
           <div class="wcard" id="AboutUs">
@@ -108,16 +76,19 @@
             </center>
           </div>
         </div>
+        <br>
+        <br>
+        <br>
         <!-- Sponsors -->
         <div class="container">
           <div class="wcard" id="Sponsors">
             <center><p class="cardHeader">Our Sponsors</p></center>
             <br />
             <div class="sponsors-logo">
-              <img src="Devfolio_Logo-White.png" alt="Devfolio" />
-              <img src="Matic_Logo-White@2x.png" alt="Devfolio" />
-              <img src="Portis_Logo-White.png" alt="Devfolio" />
-              <img src="Tezos_Logo-White.png" alt="Devfolio" />
+              <img src="Devfolio_Logo-White.png" alt="Devfolio" class="sponsorsImages" />
+              <img src="Matic_Logo-White@2x.png" alt="Devfolio" class="sponsorsImages" />
+              <img src="Portis_Logo-White.png" alt="Devfolio" class="sponsorsImages"/>
+              <img src="Tezos_Logo-White.png" alt="Devfolio" class="sponsorsImages"/>
               <!-- <img src="Devfolio_Logo-White.png" alt="Devfolio" /> -->
             </div>
           </div>
@@ -171,7 +142,7 @@
     <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
     <script>
       // Set the date we're counting down to
-      var countDownDate = new Date("Feb 20, 2021 23:59:59").getTime();
+      var countDownDate = new Date("Feb 27, 2021 23:59:59").getTime();
 
       // Update the count down every 1 second
       var x = setInterval(function () {
