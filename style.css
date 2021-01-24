@@ -22,9 +22,8 @@ nav {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.navLink{
+.navLink {
   color: white;
-  
 }
 
 ul {
@@ -73,13 +72,12 @@ ul {
   background: -webkit-linear-gradient(top right, #000000, rgb(0, 74, 173));
   background: -moz-linear-gradient(top right, #000000, rgb(0, 74, 173));
   background: linear-gradient(to bottom left, #000000, rgb(0, 74, 173));
-
 }
 
 .spaceJam {
   margin: 10vh auto;
   width: 60vw;
-  min-height: 40vh;
+  min-height: 44vh;
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -90,7 +88,7 @@ ul {
 }
 
 .spaceJam img {
-  max-height: 50vh;
+  max-height: 52vh;
 }
 
 .spaceJam p {
@@ -119,35 +117,53 @@ ul {
   }
 }
 
-.wcard{
-  /* background-color: rgb(242, 242, 242,0.9); */
-  background-color: rgb(26, 26, 26,0.8);
-  padding: 30px;
-  border-radius: 8px;
-  margin-left:10%;
-  margin-right: 10%;
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 90vh;
+  align-items: center;
 }
 
-.cardContent{
+.wcard {
+  /* background-color: rgb(242, 242, 242,0.9); */
+  background-color: rgb(26, 26, 26, 0.7);
+  padding: 30px;
+  border-radius: 8px;
+  margin: auto;
+  width: 70vw;
+}
+
+.cardContent {
   color: white;
   font-size: 20px;
   padding: 10px;
 }
 
-.cardHeader{
+.cardHeader {
   color: white;
   font-size: 40px;
-  font-weight:600 ;
+  font-weight: 600;
 }
 
-.accent{
+.accent {
   color: #4bcccc;
+}
+
+.sponsors-logo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.sponsors-logo img{
+  padding: 15px;
+  max-height: 12vh;
 }
 
 /* Footer */
 
-.footer{
-  background-color: #0d0d0d;
+.footer {
+  background-color: rgba(13, 13, 13, 0.7);
   margin-top: 20px;
   color: white;
   display: flex;
@@ -167,25 +183,25 @@ ul {
   float: right;
   justify-content: right;
 }
-a.footerIcon:hover{
+a.footerIcon:hover {
   color: white;
 }
- #discord:hover{
-  color :#4bcccc;
- }
- #github:hover{
-  color :#4bcccc; 
+#discord:hover {
+  color: #4bcccc;
 }
- #instagram:hover{
-  color :#4bcccc;
- }
-#mail:hover{
-  color :#4bcccc;
- }
+#github:hover {
+  color: #4bcccc;
+}
+#instagram:hover {
+  color: #4bcccc;
+}
+#mail:hover {
+  color: #4bcccc;
+}
 
-.column{
-    display: flex;
-    flex-direction: column;
+.column {
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
@@ -197,11 +213,11 @@ a.footerIcon:hover{
   color: white;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
+.row {
+  display: flex;
+  flex-direction: row;
 }
-.copyright{
+.copyright {
   margin-top: 12px;
   font-size: 13px;
 }
@@ -217,7 +233,7 @@ body::-webkit-scrollbar-track {
   background: transparent; /* color of the tracking area */
 }
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 37,0.8); /* color of the scroll thumb */
+  background-color: rgba(0, 0, 37, 0.8); /* color of the scroll thumb */
   border-radius: 5px; /* roundness of the scroll thumb */
 }
 
@@ -231,8 +247,8 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
-#check{
-  display:none;
+#check {
+  display: none;
 }
 
 .checkbtn {
@@ -241,57 +257,56 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 1100px) {
-
-  .navLink{
+  .navLink {
     display: none;
   }
 
-  .links{
+  .links {
     font-size: 15px;
-    padding-left: 0px ;
+    padding-left: 0px;
   }
 
   .logo {
     font-size: 30px;
   }
 
-  .footer{
-      flex-direction: column;
-      align-items: center;
-      padding: 2.5px;
-      padding-left:15px ;
-      padding-right:15px ;
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
-
 
   .footerIcon {
-    font-size:20px ;
+    font-size: 20px;
     margin-bottom: 30px;
   }
-  
-  .wcard{
+
+  .wcard {
     padding: 15px;
-    margin-left:5%;
+    margin-left: 5%;
     margin-right: 5%;
   }
-  
-  .cardContent{
+
+  .cardContent {
     font-size: 15px;
     padding: 5px;
   }
-  
-  .cardHeader{
+
+  .cardHeader {
     font-size: 25px;
+  }
+
+  .spaceJam{
+    min-height: 15vh;
   }
 
   .spaceJam img {
     max-height: 20vh;
   }
-  
-  #demo{
+
+  #demo {
     font-size: 20px;
   }
-
-  
 }
-
